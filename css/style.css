@@ -427,7 +427,7 @@ ul.nav.nav-tabs {
   gap: 3rem;
   padding-inline: 10rem 2.7rem;
   padding-block: 3.6rem 6.4rem;
-  background-color: #43B2FD; }
+  background-color: #333; }
   .governance .box {
     width: 25.5rem;
     height: 24rem;
@@ -452,7 +452,7 @@ ul.nav.nav-tabs {
   margin-top: 17rem;
   transition: 0.15s transform; }
   .governance__card-container .governance__card__content {
-    background-color: #43B2FD;
+    background-color: #333;
     padding-block-start: 2.5rem;
     padding-inline-start: 2.5rem;
     padding-inline-end: 3.3rem;
@@ -468,6 +468,9 @@ ul.nav.nav-tabs {
       color: #fff;
       margin-inline-start: auto;
       width: fit-content; }
+      .governance__card-container .governance__card__content p {
+        font-size: 1.6rem;
+        color: #fff;}
   .governance__card-container:hover {
     transform: translateY(-1em); }
 
@@ -1000,7 +1003,7 @@ img.president {
   font-size: 1.6rem; }
 
 .offcanvas-body .country-map {
-  width: 30rem;
+  width: 20rem;
   display: block;
   margin: auto;
   margin-top: 5rem; }
