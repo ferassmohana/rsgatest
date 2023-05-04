@@ -634,7 +634,7 @@ ul.nav.nav-tabs {
     gap: 3rem;
     padding-inline: 10rem 2.7rem;
     padding-block: 3.6rem 6.4rem;
-    background-color: #43B2FD;
+    background-color: #333;
 
     .box {
         width: 25.5rem;
@@ -665,7 +665,7 @@ ul.nav.nav-tabs {
     transition: 0.15s transform;
 
     .governance__card__content {
-        background-color: #43B2FD;
+        background-color: #333;
         padding-block-start: 2.5rem;
         padding-inline-start: 2.5rem;
         padding-inline-end: 3.3rem;
@@ -684,6 +684,11 @@ ul.nav.nav-tabs {
             color: #fff;
             margin-inline-start: auto;
             width: fit-content;
+        }
+        
+        p{
+            font-size: 1.6rem;
+            color: #fff;
         }
     }
 
@@ -1360,7 +1365,7 @@ img.president {
     }
 
     .country-map {
-        width: 30rem;
+        width: 20rem;
         display: block;
         margin: auto;
         margin-top: 5rem;
