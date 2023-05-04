@@ -582,10 +582,6 @@ ul.nav.nav-tabs {
   animation-delay: 0.8s;
   animation-duration: 0.4s; }
 
-.heading-text.member h1 {
-  font-size: 6.4rem;
-  line-height: 10rem; }
-
 .country:hover path {
   transition: 0.2s;
   fill: #2439A4; }
@@ -1087,9 +1083,6 @@ img.president {
     padding: 1rem; }
   #governanceTab li button.active {
     border-width: 2px; }
-  .heading-text.member h1 {
-    font-size: 4.2rem;
-    padding-inline-end: 26rem; }
   .main {
     gap: 4rem; }
   .main > div p {
@@ -1244,10 +1237,6 @@ img.president {
     padding: 3rem; }
   .main__member__contries .row.g-5 {
     --bs-gutter-y: 3rem; }
-  .heading-text.member h1 {
-    font-size: 3rem;
-    text-transform: capitalize;
-    padding-inline-end: 2rem; }
   .main__focus {
     padding: 3rem; }
     .main__focus .row.g-5 {
