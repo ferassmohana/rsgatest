@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @media (max-width: 500px) {
+            .carousel-item img {
+                width: 350%;
+            }
+        }
+    </style>
+    <title>RSGA</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg scrollAnimat child2" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/logos/logo.svg" class="logo" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./member.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" id="services">
+                                <li><a class="dropdown-item" href="./focus.html">Focus</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Collaboration</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Governance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactUs.html">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-language"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">العربية</a></li>
+                                <li><a class="dropdown-item" href="#">ُEnglish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide scrollAnimat" data-bs-ride="true">
+
+            <div class="carousel-inner">
+                <div class="backdrop"></div>
+                <div class="carousel-item active">
+                    <video class="video w-100 h-auto" autoplay muted loop>
+                        <source src="assets/v2/فيديو الارضط.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="heading-text member">
+                    <h1 class="scrollAnimat heading-animation">
+                        Who Are The Members of
+                        RSGA ?
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="main__member">
+            <span class="main-divs-title main__member__title scrollAnimat child3">Members</span>
+            <div class="main__member__contries scrollAnimat">
+                <div class="row g-5">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/egypt.html" class="country-container scrollAnimat child3 delay-2">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/egypt.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Egypt</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Egypt, officially known as the Arab Republic of Egypt, is an incredibly fascinating
+                                    country that boasts an abundance of history, culture, cuisine, religion, and diverse
+                                    geography
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/jordan.html" class="country-container scrollAnimat child3 delay-4">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/jordan.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Jordan</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Jordan is a young nation situated on an ancient land that has been home to many
+                                    civilizations throughout history. Its borders are separated from ancient Palestine
+                                    by the Jordan River, and the region has played a prominent role in biblical history.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/yemen.html" class="country-container scrollAnimat child3 delay-6">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/yemen.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">yemen</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Yemen is a country located in the southwestern corner of the Arabian Peninsula. It is
+                                    a mostly mountainous and arid region, but there are large areas with sufficient
+                                    rainfall to make agriculture successful
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/saudi.html" class="country-container scrollAnimat child3 delay-8">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/saudi-arabia.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Saudi Arabia</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Saudi Arabia is a sparsely populated kingdom located in the Middle East, extending
+                                    across most of the northern and central Arabian Peninsula. Despite its youth as a
+                                    nation, Saudi Arabia is heir to a rich history.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/sudan.html" class="country-container scrollAnimat child3 delay-2">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/sudan.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Sudan</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Sudan is a country located at the crossroads of Sub-Saharan Africa and the Middle
+                                    East, stretching across the Red Sea
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/somailia.html" class="country-container scrollAnimat child3 delay-4">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/somalia.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Somalia</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Somalia is located at the easternmost part of Africa, occupying a strategic position
+                                    between sub-Saharan Africa, Arabia, and southwestern Asia.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/djibouti.html" class="country-container scrollAnimat child3 delay-6">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/djibouti.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Djibouti</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Djibouti is a small but strategically important country located on the northeast
+                                    coast of the Horn of Africa. It is situated on the Bab el Mandeb Strait, which
+                                    separates the Red Sea from the Gulf of Aden.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/eriteria.html" class="country-container scrollAnimat child3 delay-8">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/eritrea.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Eritrea</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Eritrea is a country located on the Horn of Africa with a coastal location on the Red
+                                    Sea. Its name reflects the importance of its history and culture, as Mare Erythraeum
+                                    is Latin for "Red Sea."
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__core-objectives">
+            <span class="main__core-objectives__title main-divs-title scrollAnimat child3">Core objectives</span>
+            <div class="scrollAnimat main__core-objectives__content">
+                <div class="grid-2 align-items-center  main__core-objectives__content--img-right">
+                    <img src="./assets/v2/1.jpg" alt="" class="scrollAnimat child1">
+                    <ul class="list-group scrollAnimat child2">
+                        <li class="core-list">
+                            Raise the level of cooperation, understanding, and coordination of political stances among
+                            the member states of the council in order to serve their interests in regional and
+                            international forums.
+                        </li>
+                        <li class="core-list">
+                            Deepen relations between member states to avoid any disagreement or disputes among them.
+                            Strengthen cooperation between the member states of the council in the fields of technology,
+                            scientific research, media, culture, tourism, energy, industry, mining, agriculture, water,
+                            and livestock resources.
+                        </li>
+                        <li class="core-list">
+                            Enhance cooperation and coordination among member states' ports and transit trade, and
+                            encourage the conclusion of twinning agreements between them.
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-2 align-items-center  main__core-objectives__content--img-left">
+                    <ul class="list-group scrollAnimat child1">
+                        <li class="core-list">
+                            Strengthen cooperation between the member states of the council in the fields .7 of
+                            technology, scientific research, media, culture, tourism, energy, industry, mining,
+                            agriculture, and water and livestock resources.
+                        </li>
+                        <li class="core-list">
+                            Enhance cooperation and coordination among member states’ ports and transit .9 trade and
+                            encourage the conclusion of twinning agreements therebetween.
+                        </li>
+                    </ul>
+                    <img src="./assets/v2/3.jpg" alt="" class="scrollAnimat child2">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="d-flex align-items-start gap-5">
+            <img src="./assets/logos/logo2.svg" alt="logo" class="logo2">
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./member.html">Members</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li></li>
+            </ul>
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./contactUs.html">Contact us</a></li>
+                <li><a href="">العربية</a></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="copyright">Copyright © 2023 RSGA. All rights reserved. Made in Saudi.</span>
+            <div class="d-flex align-items-end gap-5">
+                <a href="" class="privacy-terms">Privacy Policy</a>
+                <a href="" class="privacy-terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/animateScroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+
+</html>

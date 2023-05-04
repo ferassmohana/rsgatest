@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <style>
+        #collaboration_video.active {
+            z-index: 99999999;
+        }
+
+        .header {
+            overflow: hidden;
+        }
+    </style>
+    <title>RSGA</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg scrollAnimat child2" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/logos/logo.svg" class="logo" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./member.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" id="services">
+                                <li><a class="dropdown-item active" href="./focus.html">Focus</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Collaboration</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Governance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactUs.html">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-language"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">العربية</a></li>
+                                <li><a class="dropdown-item" href="#">ُEnglish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </nav>
+        <div class="heading-text member">
+            <h1 class="scrollAnimat heading-animation">Collaboration in the future.</h1>
+        </div>
+        <video loop autoplay id="collaboration_video" class="d-block w-100 h-auto video">
+            <source src="./assets/v2/كولابريشن كبير.mp4" type="">
+        </video>
+    </header>
+    <main class="main">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div id='plyr-youtube' data-type="youtube" data-video-id="TbsvRyYpcOQ">
+                            <video id="player" class="w-100 h-auto" playsinline controls
+                                data-poster="C:\Users\Admin\Downloads\encanto.jpg">
+                                <source src="./assets/v2/فيديو 3.mp4" type="video/mp4" />
+                                <!-- Captions are optional -->
+                                <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en"
+                                    default />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__partnership-tab">
+            <ul class="nav nav-tabs scrollAnimat child1 align-self-center" id="partnershipTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="interMember-tab" data-bs-toggle="tab"
+                        data-bs-target="#interMember-tab-pane" type="button" role="tab"
+                        aria-controls="interMember-tab-pane" aria-selected="true">Inter-member
+                        relations</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="partnership-tab" data-bs-toggle="tab"
+                        data-bs-target="#partnership-tab-pane" type="button" role="tab"
+                        aria-controls="partnership-tab-pane" aria-selected="false">Partnerships</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="interMemberCop-tab" data-bs-toggle="tab"
+                        data-bs-target="#interMemberCop-tab-pane" type="button" role="tab"
+                        aria-controls="interMemberCop-tab-pane" aria-selected="false">Inter-member
+                        cooperation</button>
+                </li>
+            </ul>
+            <div class="tab-content py-4 scrollAnimat child1" id="partnershipContent">
+                <div class="tab-pane fade show active" id="interMember-tab-pane" role="tabpanel"
+                    aria-labelledby="interMember-tab" tabindex="0">
+                    <img src="./assets/Inter-member relations.png">
+                    <p class="description scrollAnimat child1">
+                        Relations refer to the connections among the members of a group or the social network within a
+                        group. Members in a group are linked to one another at varying levels.
+                        <br>
+                        The RSGAC aims to enhance the relations between its members through focus areas and initiatives
+                        that will increase collaboration and cooperation in all fields between member states, create
+                        cohesive agendas, work towards common goals, and promote mutual growth throughout the council.
+                        <br>
+                        The RSGAC's existence will not only increase cooperation through its key focus areas, but also
+                        stimulate growth between members. This can be achieved through regular council meetings and
+                        progress updates, mutual initiatives that boost cooperation, maintenance of strong dialogue
+                        between member representatives, and policies that mutually benefit all members.
+                        <br>
+                        Collaboration is critical to the council, and therefore we value partnerships with blocs and
+                        organizations from all around the world. A collaborative international community allows the
+                        entire world to develop, learn, and prosper. The RSGAC will work with regional and international
+                        organizations, blocs, and commissions from all around the world.
+                        <br>
+                        The Supreme Council, comprising the kings and heads of states of the member states of the
+                        council, shall be the highest authority of the council. The Supreme Council shall be chaired in
+                        rotation for each term pursuant to the alphabetical order of the names of member states. As an
+                        exception, the council shall be chaired for the first term by the host country. The Supreme
+                        Council shall regularly convene once a year and may hold extraordinary meetings where necessary.
+                        The meetings shall be valid if attended by two-thirds of the council members.
+
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="partnership-tab-pane" role="tabpanel" aria-labelledby="partnership-tab"
+                    tabindex="0">
+                    <img src="./assets/Partnerships-tab.png" class="scrollAnimat child2">
+                    <p class="description scrollAnimat child1">
+                        Inter-member relations refer to the connections among the members of a group, or the social
+                        network within a group. The members of a group are linked to one another at varying levels. The
+                        RSGAC aims to strengthen the relations between its members by increasing collaboration and
+                        cooperation in all fields between member states, creating cohesive agendas, working towards
+                        common goals, and promoting mutual growth throughout the council.
+                        <br>
+                        To achieve this, the RSGAC will hold regular council meetings and provide progress updates,
+                        implement mutual initiatives that boost cooperation, maintain strong dialogue between member
+                        representatives, and establish policies that mutually benefit all members. Collaboration is
+                        critical to the council, and the RSGAC values partnerships with blocs and organizations from all
+                        around the world. A collaborative international community allows the entire world to develop,
+                        learn, and prosper. Therefore, the RSGAC will work with regional and international
+                        organizations, blocs, and commissions from all around the world.
+                        <br>
+                        The Supreme Council is the highest authority of the RSGAC and is comprised of the kings and
+                        heads of states of the member states of the council. The Supreme Council will be chaired in
+                        rotation for each term according to the alphabetical order of the names of member states.
+                        However, the council shall be chaired for the first term by the host country as an exception.
+                        The Supreme Council will regularly convene once a year, and it may hold extraordinary meetings
+                        where necessary. The meetings will be valid if attended by two-thirds of the council members.
+
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="interMemberCop-tab-pane" role="tabpanel"
+                    aria-labelledby="interMemberCop-tab" tabindex="0">
+                    <img src="./assets/Inter-member-relations.png" class="scrollAnimat child2">
+                    <p class="description scrollAnimat child1">
+                        Relations among group members, or the social network within a group, are crucial to the success
+                        of any organization. The RSGAC (Regional Strategic Growth Advancement Council) aims to enhance
+                        the relations between its members through various initiatives. The council intends to increase
+                        collaboration and cooperation in all fields between member states, create cohesive agendas, work
+                        towards common goals, and achieve mutual growth throughout the council.
+                        <br>
+                        The RSGAC is committed to not only increasing cooperation through its key focus areas but also
+                        stimulating growth between members. This can be achieved by holding regular council meetings and
+                        progress updates, initiating mutual initiatives that boost cooperation, maintaining strong
+                        dialogue between member representatives, and implementing policies that mutually benefit all
+                        members.
+                        <br>
+                        Collaboration is critical to the council's success, and the RSGAC values partnerships with blocs
+                        and organizations from all around the world. A collaborative international community allows the
+                        entire world to develop, learn and prosper. The RSGAC will work with regional and international
+                        organizations, blocs, and commissions from all around the world to achieve this goal.
+                        <br>
+                        The Supreme Council is the highest authority of the council and comprises the kings and heads of
+                        states of the member states. The Supreme Council shall be chaired in rotation for each term
+                        pursuant to the alphabetical order of the names of member states. As an exception, the council
+                        shall be chaired for the first term by the host country. The Supreme Council shall regularly
+                        convene once a year and may hold extraordinary meetings where necessary. The meetings shall be
+                        valid if attended by two-thirds of the council members.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="d-flex align-items-start gap-5">
+            <img src="./assets/logos/logo2.svg" alt="logo" class="logo2">
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./member.html">Members</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li></li>
+            </ul>
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./contactUs.html">Contact us</a></li>
+                <li><a href="">العربية</a></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="copyright">Copyright © 2023 RSGA. All rights reserved. Made in Saudi.</span>
+            <div class="d-flex align-items-end gap-5">
+                <a href="" class="privacy-terms">Privacy Policy</a>
+                <a href="" class="privacy-terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/animateScroll.js"></script>
+    <script src="./js/scrollVideo.js"></script>
+</body>
+
+</html>

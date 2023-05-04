@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .carousel-item img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        @media (max-width: 500px) {
+            .carousel-item img {
+                position: absolute;
+                bottom: 0;
+                height: 100%;
+            }
+        }
+    </style>
+    <title>RSGA</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg scrollAnimat child2" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/logos/logo.svg" class="logo" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./member.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu"  id="services">
+                                <li><a class="dropdown-item" href="./focus.html">Focus</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Collaboration</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Governance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contactUs.html">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-language"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">العربية</a></li>
+                                <li><a class="dropdown-item" href="#">ُEnglish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide scrollAnimat" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="backdrop"></div>
+                <div class="carousel-item active">
+                    <img src="./assets/v2/4.jpg" class="d-block contactUS" alt="First Background">
+                </div>
+                <div class="heading-text member">
+                    <h1 class="scrollAnimat heading-animation">Keep in touch with us. 
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="main__form">
+            <span class="main__form__title scrollAnimat child3">
+                Have a question? Get in touch too get your answer. 
+            </span>
+            <span class="main__form__sub-title scrollAnimat child3 delay-2">
+                Fill up the Form and our team will get back to within 24 hrs
+            </span>
+            <div class="grid-2">
+                <div class="main__form__content">
+                    <form action="" class="">
+                        <input type="text" name="firstname" id="firstname" class="form-input scrollAnimat child1"
+                            placeholder="First Name">
+                        <input type="text" name="lastname" id="lastname" class="form-input scrollAnimat child1"
+                            placeholder="Last Name">
+                        <input type="text" name="email" id="email" class="form-input scrollAnimat child1"
+                            placeholder="Email address">
+                        <textarea name="message" id="message" class="form-input textarea scrollAnimat child1"
+                            placeholder="Type message"></textarea>
+                    </form>
+                    <button class="submit scrollAnimat child3">Submit</button>
+                </div>
+                <img src="./assets/main-bg/main-bg-5.png" alt="" class="scrollAnimat child2">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="d-flex align-items-start gap-5">
+            <img src="./assets/logos/logo2.svg" alt="logo" class="logo2">
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./member.html">Members</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li></li>
+            </ul>
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./contactUs.html">Contact us</a></li>
+                <li><a href="">العربية</a></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="copyright">Copyright © 2023 RSGA. All rights reserved. Made in Saudi.</span>
+            <div class="d-flex align-items-end gap-5">
+                <a href="" class="privacy-terms">Privacy Policy</a>
+                <a href="" class="privacy-terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/animateScroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+
+</html>

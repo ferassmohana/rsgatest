@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .main-bg-8 {
+            position: absolute !important;
+            bottom: -20rem;
+        }
+    </style>
+    <title>RSGA</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg scrollAnimat child2" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/logos/logo.svg" class="logo" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./member.html">Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" id="services">
+                                <li><a class="dropdown-item" href="./focus.html">Focus</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Collaboration</a></li>
+                                <li><a class="dropdown-item" href="./Collaboration.html">Governance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactUs.html">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-language"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">العربية</a></li>
+                                <li><a class="dropdown-item" href="#">ُEnglish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide scrollAnimat" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="backdrop"></div>
+                <div class="carousel-item active">
+                    <img src="./assets/main-bg/main-bg-7.png" class="d-block main-bg-7" alt="First Background">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/v2/2.jpg" class="d-block main-bg-8" alt="Second Background">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/main-bg/main-bg-9.png" class="d-block" alt="Third Background">
+                </div>
+                <div class="heading-text member">
+                    <h1 class="scrollAnimat heading-animation">What’s Is RSGA ?</h1>
+                </div>
+            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <i class="fa-solid fa-arrow-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="main__about scrollAnimat">
+            <span class="main-divs-title main__about__title scrollAnimat">Who we are</span>
+            <div class="grid-2">
+                <img src="./assets/main-bg/main-bg-5.png" alt="" class="scrollAnimat child1">
+                <div class="description scrollAnimat child2">
+                    <p>
+                        Red Sea and the Gulf of Aden (RGSA) contains eight founding member states: Saudi Arabia, Egypt,
+                        Jordan, Yemen, Sudan, Somalia, Eritrea, and Djibouti.
+                        <br>
+                        The headquarter of the General Secretariat is located in Riyadh, Saudi Arabia.
+                        The council convenes through a rotating presidency and is composed of three key agencies:
+                        Supreme Council, Ministerial Council, and General Secretariat.
+                        <br>
+                        All member nations that border the Red=Sea or the Gulf of Aden are part of the regional
+                        organization known as the Red Sea and Gulf of Aden, which was established in January 2020 to
+                        improve the relationships between its members by focusing on and tackling projects that will
+                        boost cooperation and unity.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__rsga-explore">
+            <video id="myVideo">
+                <source src="./assets/v2/فيديو 2 (1).mp4" type="video/mp4">
+            </video>
+            <div class="main__rsga-explore__video">
+                <div class="scrollAnimat child1 d-flex align-items-center gap-4">
+                    <a onclick="myFunction()" id="myBtn">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                    <span id="play_video_span">play video</span>
+                </div>
+                <span class="scrollAnimat child2" id="play_video_text">Let's explore the RSGA's geographic value. The
+                    Council countries are in charge of two important straits. </span>
+            </div>
+        </div>
+        <div class="main__focus">
+            <span class="main-divs-title main__focus__title scrollAnimat child3">Focus</span>
+            <div class="main__foucs__members">
+                <div class="row g-5">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/Environment.html"
+                            class="main__foucs__member scrollAnimat child3 delay-2">
+                            <img src="./assets/focus/icon-1.svg" alt="">
+                            <span>Environment</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/economicDevelopment.html"
+                            class="main__foucs__member scrollAnimat child3 delay-4">
+                            <img src="./assets/focus/icon-2.svg" alt="">
+                            <span>Economic development</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/ScienceTechnology.html"
+                            class="main__foucs__member scrollAnimat child3 delay-6">
+                            <img src="./assets/focus/icon-3.svg" alt="">
+                            <span>Science & technology</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/trade.html" class="main__foucs__member scrollAnimat child3 delay-8">
+                            <img src="./assets/focus/icon-4.svg" alt="">
+                            <span>Trade</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/politicalStance.html"
+                            class="main__foucs__member scrollAnimat child3 delay-2">
+                            <img src="./assets/focus/icon-5.svg" alt="">
+                            <span>Political stance</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/ScienceTechnology.html"
+                            class="main__foucs__member scrollAnimat child3 delay-4">
+                            <img src="./assets/focus/icon-6.svg" alt="">
+                            <span>Security</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/maritime.html" class="main__foucs__member scrollAnimat child3 delay-6">
+                            <img src="./assets/focus/icon-7.svg" alt="">
+                            <span>Maritime</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/naturalResources.html"
+                            class="main__foucs__member scrollAnimat child3 delay-8">
+                            <img src="./assets/focus/icon-8.svg" alt="">
+                            <span>Natural resources</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__focus-governance" id="governance">
+            <div class="backdrop"></div>
+            <div class="main__focus-governance__content">
+                <span class="main-divs-title main__focus-governance__title scrollAnimat child3">Governance</span>
+                <p class="text-center scrollAnimat child1">
+                    RDGAC operates through a governance model with five layers The highest authority of the council
+                    comprised of the kings and heads of states of the member states of the council Composed of the
+                    foreign ministers of the member states Filled on a rotating basis for a four-year term from each
+                    member state according to the alphabetical order of the states' names, first Secretary General shall
+                    be from the host country Permanent or temporary entities focused on executing specific tasks and/or
+                    initiatives
+                </p>
+            </div>
+        </div>
+        <div class="main__rsga">
+            <span class="main-divs-title main__rsga__title">RSGA</span>
+            <div class="grid-2">
+                <p class="scrollAnimat child1">
+                    Contains 8 founding member states: Saudi Arabia, Egypt, Jordan, Yemen, Sudan, Somalia, Eritrea,
+                    and Djibouti.
+                    Headquarters of the General Secretariat is located in Riyadh, Saudi Arabia.
+                    The council will convene through a rotating presidency and is composed of three key agencies
+                    Supreme, Council Ministerial Council ,General Secretariat.
+                    Headquarters of the General Secretariat is located in Riyadh, Saudi Arabia.
+                </p>
+                <img src="./assets/RSGA.png" alt="union" class="scrollAnimat child2">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="d-flex align-items-start gap-5">
+            <img src="./assets/logos/logo2.svg" alt="logo" class="logo2">
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./member.html">Members</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li></li>
+            </ul>
+
+            <ul class="list-unstyled footer-ul">
+                <li><a href="./contactUs.html">Contact us</a></li>
+                <li><a href="">العربية</a></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="copyright">Copyright © 2023 RSGA. All rights reserved. Made in Saudi.</span>
+            <div class="d-flex align-items-end gap-5">
+                <a href="" class="privacy-terms">Privacy Policy</a>
+                <a href="" class="privacy-terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+
+    <script src="./js/animateScroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        var video_backdrop = document.getElementById('video_backdrop');
+        var play_video_span = document.getElementById('play_video_span');
+        var play_video_text = document.getElementById('play_video_text');
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                play_video_span.style.display = 'none';
+                play_video_text.style.display = 'none';
+                btn.style.display = 'none';
+                video.controls = true;
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+</body>
+
+</html>
