@@ -197,6 +197,7 @@ body {
     min-height: 100%;
     box-sizing: border-box;
     font-family: 'Figtree', sans-serif;
+    overflow: hidden;
 }
 
 body.ltrDir {
@@ -1395,24 +1396,23 @@ img.president {
     filter: blur(0px);
 }
 
-    .country-map {
-        width: 30rem;
-        display: block;
-        margin: auto;
-        margin-top: 5rem;
-    }
+.country-map {
+    width: 30rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
 }
 
-    .offcanvas.offcanvas-end {
-        position: absolute;
-        transform: translateX(0);
-        top: 50%;
-        transform: translateY(-50%);
-    }
 
-    .modal-backdrop {
-        display: none;
-    }
+.offcanvas.offcanvas-end {
+    position: absolute;
+    transform: translateX(0);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-backdrop {
+    display: none;
 }
 
 .st2 {
@@ -1451,7 +1451,9 @@ img.president {
         background-position: 0% 50%;
     }
 }
-.country-name, .offcanvas-title{
+
+.country-name,
+.offcanvas-title {
     font-size: 2.5rem;
 }
 
