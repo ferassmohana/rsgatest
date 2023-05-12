@@ -16,3 +16,4 @@ const observers = new IntersectionObserver(callback, options)
 
 const video = document.querySelectorAll('.video');
 video.forEach((el) => observers.observe(el));
+

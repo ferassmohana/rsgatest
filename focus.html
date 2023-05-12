@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css.map">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        @media (max-width: 821px) {
-            .carousel-item img {
-                right: 35rem;
-            }
-        }
-    </style>
     <title>RSGA</title>
 </head>
 
 <body>
+    <div id="pageLoader">
+        <img src="./assets/logos/logo2.svg" alt="">
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <header class="header">
         <nav class="navbar navbar-expand-lg scrollAnimat child2" id="navbar">
             <div class="container-fluid">
@@ -50,7 +51,6 @@
                             <ul class="dropdown-menu"  id="services">
                                 <li><a class="dropdown-item active" href="./focus.html">Focus</a></li>
                                 <li><a class="dropdown-item" href="./Collaboration.html">Collaboration</a></li>
-                                <li><a class="dropdown-item" href="./Collaboration.html">Governance</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -69,16 +69,16 @@
                     </ul>
                 </div>
             </div>
-            <div class="progress-container" id="progressContainer">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
+            
         </nav>
 
         <div id="carouselExampleIndicators" class="carousel slide scrollAnimat" data-bs-ride="true">
             <div class="carousel-inner">
                 <div class="backdrop"></div>
                 <div class="carousel-item active">
-                    <img src="./assets/focus.png" class="d-block" alt="First Background">
+                    <video autoplay muted loop>
+                        <source src="./assets/v2/focus.mp4">
+                    </video>
                 </div>
                 <div class="heading-text member">
                     <h1 class="scrollAnimat heading-animation">RSGA Focus in the future.</h1>
@@ -93,51 +93,51 @@
             <div class="main__foucs__members">
                 <div class="row g-5">
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./focus-members/Environment.html" class="main__foucs__member scrollAnimat child3 delay-2">
-                            <img src="./assets/focus/icon-1.svg" alt="">
-                            <span>Environment</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./focus-members/economicDevelopment.html" class="main__foucs__member scrollAnimat child3 delay-4">
-                            <img src="./assets/focus/icon-2.svg" alt="">
+                        <a href="./focus-members/economicDevelopment.html" class="main__foucs__member scrollAnimat child3 delay-2">
+                            <img src="./assets/focus/icon-2.png" alt="">
                             <span>Economic development</span>
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./focus-members/ScienceTechnology.html" class="main__foucs__member scrollAnimat child3 delay-6">
-                            <img src="./assets/focus/icon-3.svg" alt="">
-                            <span>Science & technology</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./focus-members/trade.html" class="main__foucs__member scrollAnimat child3 delay-8">
-                            <img src="./assets/focus/icon-4.svg" alt="">
-                            <span>Trade</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./focus-members/politicalStance.html" class="main__foucs__member scrollAnimat child3 delay-2">
-                            <img src="./assets/focus/icon-5.svg" alt="">
-                            <span>Political stance</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./focus-members/security.html" class="main__foucs__member scrollAnimat child3 delay-4">
-                            <img src="./assets/focus/icon-6.svg" alt="">
-                            <span>Security</span>
+                        <a href="./focus-members/Environment.html" class="main__foucs__member scrollAnimat child3 delay-4">
+                            <img src="./assets/focus/icon-1.png" alt="">
+                            <span>Environment</span>
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <a href="./focus-members/maritime.html" class="main__foucs__member scrollAnimat child3 delay-6">
-                            <img src="./assets/focus/icon-7.svg" alt="">
+                            <img src="./assets/focus/icon-7.png" alt="">
                             <span>Maritime</span>
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <a href="./focus-members/naturalResources.html" class="main__foucs__member scrollAnimat child3 delay-8">
-                            <img src="./assets/focus/icon-8.svg" alt="">
+                            <img src="./assets/focus/icon-8.png" alt="">
                             <span>Natural resources</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/politicalStance.html" class="main__foucs__member scrollAnimat child3 delay-2">
+                            <img src="./assets/focus/icon-5.png" alt="">
+                            <span>Political stance</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/ScienceTechnology.html" class="main__foucs__member scrollAnimat child3 delay-4">
+                            <img src="./assets/focus/icon-3.png" alt="">
+                            <span>Science & technology</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/security.html" class="main__foucs__member scrollAnimat child3 delay-6">
+                            <img src="./assets/focus/icon-6.png" alt="">
+                            <span>Security</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./focus-members/trade.html" class="main__foucs__member scrollAnimat child3 delay-8">
+                            <img src="./assets/focus/icon-4.png" alt="">
+                            <span>Trade</span>
                         </a>
                     </div>
                 </div>
@@ -172,7 +172,6 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
     <script src="./js/animateScroll.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 

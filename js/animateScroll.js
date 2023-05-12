@@ -11,9 +11,9 @@ const observer = new IntersectionObserver((entries) => {
                 entry.target.classList.add('moveInRight');
             } else if (entry.target.classList.contains('child1') && !document.body.classList.contains('rtlDir')) {
                 entry.target.classList.add('moveInLeft');
-            } else if(entry.target.classList.contains('child3')){
+            } else if (entry.target.classList.contains('child3')) {
                 entry.target.classList.add('moveInBottom');
-            }else if(entry.target.classList.contains('child4')){
+            } else if (entry.target.classList.contains('child4')) {
                 entry.target.classList.add('moveInTop');
             }
             else if (entry.target.classList.contains('heading-animation')) {
@@ -30,7 +30,7 @@ const observer = new IntersectionObserver((entries) => {
                         duration: 400,
                         delay: (el, i) => 500 + 70 * i
                     })
-            }else if(entry.target.classList.contains('video')){
+            } else if (entry.target.classList.contains('video')) {
                 console.log('asasdad')
                 entry.target.play();
             }
@@ -46,3 +46,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.scrollAnimat');
 hiddenElements.forEach((el) => observer.observe(el));
+
+window.addEventListener('load', () => {
+    document.getElementById('pageLoader').style.display = "none";
+})

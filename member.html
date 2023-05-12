@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        @media (max-width: 500px) {
-            .carousel-item img {
-                width: 350%;
-            }
-        }
-    </style>
     <title>RSGA</title>
 </head>
 
 <body>
+    <div id="pageLoader">
+        <img src="./assets/logos/logo2.svg" alt="">
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <header class="header">
         <nav class="navbar navbar-expand-lg scrollAnimat child2" id="navbar">
             <div class="container-fluid">
@@ -50,7 +54,6 @@
                             <ul class="dropdown-menu" id="services">
                                 <li><a class="dropdown-item" href="./focus.html">Focus</a></li>
                                 <li><a class="dropdown-item" href="./Collaboration.html">Collaboration</a></li>
-                                <li><a class="dropdown-item" href="./Collaboration.html">Governance</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -69,9 +72,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="progress-container" id="progressContainer">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
+
         </nav>
 
         <div id="carouselExampleIndicators" class="carousel slide scrollAnimat" data-bs-ride="true">
@@ -79,8 +80,8 @@
             <div class="carousel-inner">
                 <div class="backdrop"></div>
                 <div class="carousel-item active">
-                    <video class="video w-100 h-auto" autoplay muted loop>
-                        <source src="assets/v2/فيديو الارضط.mp4" type="video/mp4">
+                    <video class="video" autoplay muted loop>
+                        <source src="assets/v2/main-vd-3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="heading-text member">
@@ -99,62 +100,6 @@
             <div class="main__member__contries scrollAnimat">
                 <div class="row g-5">
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./members/egypt.html" class="country-container scrollAnimat child3 delay-2">
-                            <div class="country-container__title">
-                                <img src="./assets/flags/egypt.svg" alt="Egypt flag" class="flag-icon">
-                                <span class="country-name">Egypt</span>
-                            </div>
-                            <div class="country-container__details">
-                                <p>Egypt, officially known as the Arab Republic of Egypt, is an incredibly fascinating
-                                    country that boasts an abundance of history, culture, cuisine, religion, and diverse
-                                    geography
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./members/jordan.html" class="country-container scrollAnimat child3 delay-4">
-                            <div class="country-container__title">
-                                <img src="./assets/flags/jordan.svg" alt="Egypt flag" class="flag-icon">
-                                <span class="country-name">Jordan</span>
-                            </div>
-                            <div class="country-container__details">
-                                <p>Jordan is a young nation situated on an ancient land that has been home to many
-                                    civilizations throughout history. Its borders are separated from ancient Palestine
-                                    by the Jordan River, and the region has played a prominent role in biblical history.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./members/yemen.html" class="country-container scrollAnimat child3 delay-6">
-                            <div class="country-container__title">
-                                <img src="./assets/flags/yemen.svg" alt="Egypt flag" class="flag-icon">
-                                <span class="country-name">yemen</span>
-                            </div>
-                            <div class="country-container__details">
-                                <p>Yemen is a country located in the southwestern corner of the Arabian Peninsula. It is
-                                    a mostly mountainous and arid region, but there are large areas with sufficient
-                                    rainfall to make agriculture successful
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./members/saudi.html" class="country-container scrollAnimat child3 delay-8">
-                            <div class="country-container__title">
-                                <img src="./assets/flags/saudi-arabia.svg" alt="Egypt flag" class="flag-icon">
-                                <span class="country-name">Saudi Arabia</span>
-                            </div>
-                            <div class="country-container__details">
-                                <p>Saudi Arabia is a sparsely populated kingdom located in the Middle East, extending
-                                    across most of the northern and central Arabian Peninsula. Despite its youth as a
-                                    nation, Saudi Arabia is heir to a rich history.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
                         <a href="./members/sudan.html" class="country-container scrollAnimat child3 delay-2">
                             <div class="country-container__title">
                                 <img src="./assets/flags/sudan.svg" alt="Egypt flag" class="flag-icon">
@@ -168,7 +113,35 @@
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./members/somailia.html" class="country-container scrollAnimat child3 delay-4">
+                        <a href="./members/saudi.html" class="country-container scrollAnimat child3 delay-4">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/saudi-arabia.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Saudi Arabia</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Saudi Arabia is a sparsely populated kingdom located in the Middle East, extending
+                                    across most of the northern and central Arabian Peninsula. Despite its youth as a
+                                    nation, Saudi Arabia is heir to a rich history.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/egypt.html" class="country-container scrollAnimat child3 delay-6">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/egypt.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Egypt</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Egypt, officially known as the Arab Republic of Egypt, is an incredibly fascinating
+                                    country that boasts an abundance of history, culture, cuisine, religion, and diverse
+                                    geography
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/somailia.html" class="country-container scrollAnimat child3 delay-8">
                             <div class="country-container__title">
                                 <img src="./assets/flags/somalia.svg" alt="Egypt flag" class="flag-icon">
                                 <span class="country-name">Somalia</span>
@@ -176,6 +149,34 @@
                             <div class="country-container__details">
                                 <p>Somalia is located at the easternmost part of Africa, occupying a strategic position
                                     between sub-Saharan Africa, Arabia, and southwestern Asia.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/yemen.html" class="country-container scrollAnimat child3 delay-2">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/yemen.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">yemen</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Yemen is a country located in the southwestern corner of the Arabian Peninsula. It is
+                                    a mostly mountainous and arid region, but there are large areas with sufficient
+                                    rainfall to make agriculture successful
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <a href="./members/eriteria.html" class="country-container scrollAnimat child3 delay-4">
+                            <div class="country-container__title">
+                                <img src="./assets/flags/eritrea.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Eritrea</span>
+                            </div>
+                            <div class="country-container__details">
+                                <p>Eritrea is a country located on the Horn of Africa with a coastal location on the Red
+                                    Sea. Its name reflects the importance of its history and culture, as Mare Erythraeum
+                                    is Latin for "Red Sea."
                                 </p>
                             </div>
                         </a>
@@ -195,15 +196,15 @@
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <a href="./members/eriteria.html" class="country-container scrollAnimat child3 delay-8">
+                        <a href="./members/jordan.html" class="country-container scrollAnimat child3 delay-8">
                             <div class="country-container__title">
-                                <img src="./assets/flags/eritrea.svg" alt="Egypt flag" class="flag-icon">
-                                <span class="country-name">Eritrea</span>
+                                <img src="./assets/flags/jordan.svg" alt="Egypt flag" class="flag-icon">
+                                <span class="country-name">Jordan</span>
                             </div>
                             <div class="country-container__details">
-                                <p>Eritrea is a country located on the Horn of Africa with a coastal location on the Red
-                                    Sea. Its name reflects the importance of its history and culture, as Mare Erythraeum
-                                    is Latin for "Red Sea."
+                                <p>Jordan is a young nation situated on an ancient land that has been home to many
+                                    civilizations throughout history. Its borders are separated from ancient Palestine
+                                    by the Jordan River, and the region has played a prominent role in biblical history.
                                 </p>
                             </div>
                         </a>
@@ -275,11 +276,17 @@
             </div>
         </div>
     </footer>
-    <script src="./js/all.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/animateScroll.js"></script>
-
+    <script src="./js/scrollVideo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 

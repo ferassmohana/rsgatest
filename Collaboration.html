@@ -10,19 +10,18 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css.map">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <style>
-        #collaboration_video.active {
-            z-index: 99999999;
-        }
-
-        .header {
-            overflow: hidden;
-        }
-    </style>
     <title>RSGA</title>
 </head>
 
 <body>
+    <div id="pageLoader">
+        <img src="./assets/logos/logo2.svg" alt="">
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <header class="header">
         <nav class="navbar navbar-expand-lg scrollAnimat child2" id="navbar">
             <div class="container-fluid">
@@ -51,9 +50,8 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu" id="services">
-                                <li><a class="dropdown-item active" href="./focus.html">Focus</a></li>
-                                <li><a class="dropdown-item" href="./Collaboration.html">Collaboration</a></li>
-                                <li><a class="dropdown-item" href="./Collaboration.html">Governance</a></li>
+                                <li><a class="dropdown-item" href="./focus.html">Focus</a></li>
+                                <li><a class="dropdown-item active" href="./Collaboration.html">Collaboration</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -72,15 +70,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="progress-container" id="progressContainer">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
+
         </nav>
         <div class="heading-text member">
             <h1 class="scrollAnimat heading-animation">Collaboration in the future.</h1>
         </div>
-        <video loop autoplay id="collaboration_video" class="d-block w-100 h-auto video">
-            <source src="./assets/v2/كولابريشن كبير.mp4" type="">
+        <div class="backdrop"></div>
+        <video loop autoplay id="collaboration_video" class="d-block"
+            style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
+            <source src="./assets/v2/collabration.mp4" type="">
         </video>
     </header>
     <main class="main">
@@ -92,7 +90,7 @@
                         <div id='plyr-youtube' data-type="youtube" data-video-id="TbsvRyYpcOQ">
                             <video id="player" class="w-100 h-auto" playsinline controls
                                 data-poster="C:\Users\Admin\Downloads\encanto.jpg">
-                                <source src="./assets/v2/فيديو 3.mp4" type="video/mp4" />
+                                <source src="./assets/v2/main-vd-2.mp4" type="video/mp4" />
                                 <!-- Captions are optional -->
                                 <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en"
                                     default />
@@ -125,7 +123,7 @@
             <div class="tab-content py-4 scrollAnimat child1" id="partnershipContent">
                 <div class="tab-pane fade show active" id="interMember-tab-pane" role="tabpanel"
                     aria-labelledby="interMember-tab" tabindex="0">
-                    <img src="./assets/Inter-member relations.png">
+                    <img src="./assets/Inter-member relations.png" class="scrollAnimat child2">
                     <p class="description scrollAnimat child1">
                         Relations refer to the connections among the members of a group or the social network within a
                         group. Members in a group are linked to one another at varying levels.
@@ -241,6 +239,7 @@
     <script src="./js/bootstrap.bundle.min.js.map"></script>
     <script src="./js/animateScroll.js"></script>
     <script src="./js/scrollVideo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 
 </html>
