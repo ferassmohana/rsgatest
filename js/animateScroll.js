@@ -34,12 +34,6 @@ const observer = new IntersectionObserver((entries) => {
                 console.log('asasdad')
                 entry.target.play();
             }
-        } else {
-            entry.target.classList.remove(`show`);
-            entry.target.classList.remove('moveInRight');
-            entry.target.classList.remove('moveInLeft');
-            entry.target.classList.remove('moveInBottom');
-            entry.target.classList.remove('moveInTop');
         }
     })
 })
