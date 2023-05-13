@@ -275,11 +275,15 @@ body.rtlDir {
     li {
         a {
             padding: 1.6rem 0.65rem;
-
+            transition: 0.25s all;
             &.active {
                 --bs-dropdown-link-active-bg: #e9ecef;
                 color: #000;
                 background-color: var(--bs-dropdown-link-active-bg) !important;
+            }
+
+            &:active{
+                background-color: inherit;
             }
         }
     }
@@ -1503,8 +1507,37 @@ img.president {
 }
 
 @media (max-width: 821px) {
-    .contactUS {
-        right: 70%;
+    #navbarNavDropdown{
+        ul{
+            li:last-child{
+                ul{
+                    border-radius: 0;
+                    border-inline: unset;
+                    border-block: 1px solid #fff;
+                    background-color: transparent;
+                    li{
+                        a{
+                            padding: 1.6rem 0.65rem;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    #services {
+        background-color: transparent;
+        border-inline: unset;
+        border-block: 1px solid #fff;
+        transition: 0.25s all;
+        border-radius: 0;
+
+        li {
+            a {
+                color: #fff;
+            }
+        }
     }
 
     #navbarNavDropdown {

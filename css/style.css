@@ -103,8 +103,7 @@ body {
   min-height: 100%;
   box-sizing: border-box;
   font-family: 'Figtree', sans-serif;
-  overflow: hidden;
-  }
+  overflow: hidden; }
 
 body.ltrDir {
   direction: ltr; }
@@ -156,11 +155,14 @@ body.rtlDir {
 #services {
   width: 20rem; }
   #services li a {
-    padding: 1.6rem 0.65rem; }
+    padding: 1.6rem 0.65rem;
+    transition: 0.25s all; }
     #services li a.active {
       --bs-dropdown-link-active-bg: #e9ecef;
       color: #000;
       background-color: var(--bs-dropdown-link-active-bg) !important; }
+    #services li a:active {
+      background-color: inherit; }
 
 .carousel-inner {
   height: 100vh; }
@@ -464,7 +466,7 @@ ul.nav.nav-tabs {
   margin-top: 17rem;
   transition: 0.15s transform; }
   .governance__card-container .governance__card__content {
-    background-color: #333;
+    background-color: #43B2FD;
     padding-block-start: 2.5rem;
     padding-inline-start: 2.5rem;
     padding-inline-end: 3.3rem;
@@ -480,9 +482,6 @@ ul.nav.nav-tabs {
       color: #fff;
       margin-inline-start: auto;
       width: fit-content; }
-    .governance__card-container .governance__card__content p {
-      font-size: 1.6rem;
-      color: #fff; }
   .governance__card-container:hover {
     transform: translateY(-1em); }
 
@@ -1027,16 +1026,20 @@ img.president {
   right: 0rem;
   filter: blur(0px); }
 
-.offcanvas-container {
-  width: 400px;
-  position: relative; }
-  .offcanvas-container .offcanvas.offcanvas-end {
-    position: absolute;
-    transform: translateX(0);
-    top: 50%;
-    transform: translateY(-50%); }
-  .offcanvas-container .modal-backdrop {
-    display: none; }
+.country-map {
+  width: 30rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem; }
+
+.offcanvas.offcanvas-end {
+  position: absolute;
+  transform: translateX(0);
+  top: 50%;
+  transform: translateY(-50%); }
+
+.modal-backdrop {
+  display: none; }
 
 .st2 {
   transition: 0.25s all; }
@@ -1060,7 +1063,8 @@ img.president {
   100% {
     background-position: 0% 50%; } }
 
-.country-name, .offcanvas-title {
+.country-name,
+.offcanvas-title {
   font-size: 2.5rem; }
 
 #pageLoader {
@@ -1099,8 +1103,22 @@ img.president {
     animation-delay: 1s; }
 
 @media (max-width: 821px) {
-  .contactUS {
-    right: 70%; }
+  #navbarNavDropdown ul li:last-child ul {
+    border-radius: 0;
+    border-inline: unset;
+    border-block: 1px solid #fff;
+    background-color: transparent; }
+    #navbarNavDropdown ul li:last-child ul li a {
+      padding: 1.6rem 0.65rem;
+      color: #fff; }
+  #services {
+    background-color: transparent;
+    border-inline: unset;
+    border-block: 1px solid #fff;
+    transition: 0.25s all;
+    border-radius: 0; }
+    #services li a {
+      color: #fff; }
   #navbarNavDropdown ul.navbar-nav li .nav-link {
     width: fit-content; }
   .main__about {
