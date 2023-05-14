@@ -690,7 +690,7 @@ ul.nav.nav-tabs {
     transition: 0.15s transform;
 
     .governance__card__content {
-        background-color: #43B2FD;
+        background-color: #333;
         padding-block-start: 2.5rem;
         padding-inline-start: 2.5rem;
         padding-inline-end: 3.3rem;
@@ -703,7 +703,11 @@ ul.nav.nav-tabs {
             text-transform: uppercase;
             font-family: 'Figtree';
         }
-
+        p{
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
         a {
             font-size: 1.7rem;
             color: #fff;
@@ -1476,15 +1480,15 @@ img.president {
     gap: 3rem;
 
     img {
-        width: 15rem;
+        width: 18rem;
     }
 
     .dots {
         span {
             position: relative;
             display: inline-block;
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             background-color: #fff;
             margin-inline: 8px;

@@ -466,7 +466,7 @@ ul.nav.nav-tabs {
   margin-top: 17rem;
   transition: 0.15s transform; }
   .governance__card-container .governance__card__content {
-    background-color: #43B2FD;
+    background-color: #333;
     padding-block-start: 2.5rem;
     padding-inline-start: 2.5rem;
     padding-inline-end: 3.3rem;
@@ -477,6 +477,10 @@ ul.nav.nav-tabs {
       font-weight: 600;
       text-transform: uppercase;
       font-family: 'Figtree'; }
+    .governance__card-container .governance__card__content p {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 400; }
     .governance__card-container .governance__card__content a {
       font-size: 1.7rem;
       color: #fff;
@@ -1084,12 +1088,12 @@ img.president {
   flex-direction: column;
   gap: 3rem; }
   #pageLoader img {
-    width: 15rem; }
+    width: 18rem; }
   #pageLoader .dots span {
     position: relative;
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #fff;
     margin-inline: 8px;
