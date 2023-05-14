@@ -41,7 +41,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.scrollAnimat');
 hiddenElements.forEach((el) => observer.observe(el));
 
-// window.addEventListener('load', () => {
-//     document.getElementById('pageLoader').style.display = "none";
-//     document.body.style.overflow = 'auto';
-// })
+window.addEventListener('load', () => {
+    document.getElementById('pageLoader').style.display = "none";
+    document.body.style.overflow = 'auto';
+})
